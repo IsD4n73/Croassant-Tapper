@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, required this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
 
 
 
@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 class Croassant extends StatelessWidget {
   var offset;
-  Croassant(this.offset);
+  Croassant(this.offset, {Key? key});
   @override
 
   Widget build(BuildContext context) {
