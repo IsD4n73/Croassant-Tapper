@@ -66,10 +66,10 @@ class Croassant extends StatelessWidget {
       left:offset.dx, 
       child: Transform.rotate(
         angle: Random().nextDouble() * (180 - 0) + 0 , 
-        child: Image.asset("assets/croassant.png",
+        child: Center: child: Image.asset("assets/croassant.png",
           height: size, 
           width: size, 
-        ),
+        ),) 
       ), 
     );
 
