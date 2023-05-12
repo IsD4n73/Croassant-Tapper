@@ -62,8 +62,8 @@ class Croassant extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = 60.0;//Random().nextDouble() * (200 - 60) + 60;
     return Positioned(
-      top: offset.dy, 
-      left:offset.dx, 
+      top: offset.dy - 10, 
+      left:offset.dx - 10, 
       child: Transform.rotate(
         angle: Random().nextDouble() * (280 - 0) + 0 , 
         child: Center( child: Image.asset("assets/croassant.png",
