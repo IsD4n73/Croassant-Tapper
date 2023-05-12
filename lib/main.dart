@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Expanded(child: GestureDetector(
+      body: GestureDetector(
         onTapDown: (details){
           setState(() {
             croassantList.add(Croassant(details.globalPosition));
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Stack(
             children: croassantList
           ),
-       ),) 
+       ),
     );
   }
 }
