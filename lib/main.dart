@@ -36,15 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-      body: GestureDetector(
+    return GestureDetector(
         onTapDown: (details){
           setState(() {
             croassantList.add(Croassant(details.globalPosition));
            }); 
         },
-        child : croassantList.isEmpty 
+        child : Scaffold(body: croassantList.isEmpty 
           ? Center(child:Text("Tap for Croassant")) :
           Stack(
             children: croassantList
